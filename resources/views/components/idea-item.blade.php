@@ -6,6 +6,15 @@
     </div>
     <div class="mt-4 text-slate-900">
         {{ $idea->content }}
+
+        <div class="mt-2 flex items-center gap-2">
+            <a class="text-xs uppercase tracking-wide text-sky-500"
+                href="{{ route('ideas.show', ['idea' => $idea]) }}">Show
+                more</a>
+            <x-form method="delete" action="{{ route('ideas.destroy', ['idea' => $idea]) }}">
+                <x-button>Destroy</x-button>
+            </x-form>
+        </div>
     </div>
     <div class="mt-4 flex justify-between">
         <div class="flex items-center gap-1 text-rose-500">
