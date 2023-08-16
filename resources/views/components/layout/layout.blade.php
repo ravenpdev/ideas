@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        <x-nav />
+        <x-navbar />
         <div class="container mx-auto px-4 pt-24 lg:px-0">
             <div class="grid grid-cols-12 gap-4">
                 <div class="hidden lg:col-span-3 lg:block">

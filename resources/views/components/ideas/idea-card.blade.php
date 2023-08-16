@@ -1,3 +1,5 @@
+@props(['idea'])
+
 <div class="bg-slate-100 p-4">
     <div class="flex justify-between">
         <div>
